@@ -10,7 +10,8 @@
   "keywords": [],
   "author": "Rimantas Belovas",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "live-server": "^1.2.1"
   }
 }
