@@ -1,3 +1,12 @@
-const h1DOM = document.querySelector('h1');
-h1DOM.innerText = 'Zuikio pomidoru darzas';
-h1DOM.classList.add('pavadinimas');
+const logoDOM = document.querySelector('.logo');
+const hamburgerDOM = document.querySelector('.hamburger');
+
+function hamburgerClick() {
+    if (logoDOM.classList.contains('big')) {
+        logoDOM.classList.remove('big');
+    } else {
+        logoDOM.classList.add('big');
+    }
+}
+
+hamburgerDOM.addEventListener('click', hamburgerClick);

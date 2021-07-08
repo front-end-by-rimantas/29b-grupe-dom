@@ -8,28 +8,44 @@
     <title>DOM</title>
     <link rel="stylesheet" href="./css/main.css">
     <style>
-        .pavadinimas {
-            text-transform: uppercase;
-            font-style: italic;
+        header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+
+        .big {
             font-size: 40px;
         }
 
-        .pomidoras {
-            color: red;
-            font-size: 20px;
+        nav {
+            display: none;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        nav.visible {
+            display: flex;
+        }
+
+        .hamburger {
+            font-size: 40px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <h1>Sriubos receptas</h1>
-    <ul>
-        <li>Morkos</li>
-        <li>Bulves</li>
-        <li>Svogunas</li>
-        <li>Vanduo</li>
-        <li>Druska</li>
-    </ul>
+    <header>
+        <img class="logo" src="#" alt="Logo" />
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </nav>
+        <div class="hamburger">🍔</div>
+    </header>
 
     <script src="./js/main.js" type="module" defer></script>
 </body>
